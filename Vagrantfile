@@ -62,7 +62,7 @@ Vagrant.configure(2) do |config|
     chef.chef_server_url = "https://api.opscode.com/organizations/proj"
     chef.validation_key_path = "./.chef/proj-validator.pem"
     chef.validation_client_name = "proj-validator"
-    chef.node_name = "billy_vm"
+    chef.node_name = "symons1012"
   end
 end
   
