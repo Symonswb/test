@@ -1,4 +1,4 @@
-# test-cookbook
+# test2-cookbook
 
 TODO: Enter the cookbook description here.
 
@@ -16,7 +16,7 @@ TODO: List your supported platforms.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['test']['bacon']</tt></td>
+    <td><tt>['test2']['bacon']</tt></td>
     <td>Boolean</td>
     <td>whether to include bacon</td>
     <td><tt>true</tt></td>
@@ -25,14 +25,14 @@ TODO: List your supported platforms.
 
 ## Usage
 
-### test::default
+### test2::default
 
-Include `test` in your node's `run_list`:
+Include `test2` in your node's `run_list`:
 
 ```json
 {
   "run_list": [
-    "recipe[test::default]"
+    "recipe[test2::default]"
   ]
 }
 ```

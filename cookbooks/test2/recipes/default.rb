@@ -1,17 +1,19 @@
 #
-# Cookbook Name:: test
+# Cookbook Name:: test2
 # Recipe:: default
 #
 # Copyright (C) 2015 YOUR_NAME
 #
 # All rights reserved - Do Not Redistribute
 #
+
 package "httpd"
 
 service "httpd" do
-    action |start, enable|
+    action [ :enable, :start ]
 end
 
-diectory "/root/helloworld" do
-    action |create|
+template "/var/www/html/index.html" do
+  source "index.html.erb"
+  mode "0644"
 end
