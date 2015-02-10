@@ -1,0 +1,9 @@
+{
+	"name" : "webserver"
+	"default_attributes" : {
+		"test2" : {
+			"greeting" : "webinar"
+		}
+	},
+	"run_list" : ["recipe[test2]"]
+}
